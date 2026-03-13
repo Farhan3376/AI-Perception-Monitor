@@ -1,6 +1,6 @@
-# CV Monitor Pro
+# AI-Perception-Monitor
 
-A production-ready Computer Vision Monitoring System built with YOLOv8, FastAPI, WebSockets, and MongoDB.
+A production-ready AI Perception Monitoring System built with YOLOv8, FastAPI, WebSockets, and MongoDB.
 
 ## Features
 
