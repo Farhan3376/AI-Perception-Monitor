@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Monitor Pro Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 20h9"></path>
+                <path d="M16 11V7a4 4 0 0 0-8 0v4M5 9h14l1 12H4L5 9z"></path>
+            </svg>
+            <h1>CV Monitor Pro</h1>
+        </div>
+        <div class="status-indicator">
+            <div id="connection-dot" class="dot red"></div>
+            <span id="connection-text">Connecting...</span>
+        </div>
+    </header>
+
+    <main>
+        <div class="grid">
+            <!-- Camera Feeds -->
+            <section class="cameras card">
+                <h2>Live Feeds</h2>
+                <div id="camera-grid" class="camera-grid">
+                    <!-- Dynamic Camera Cards -->
+                </div>
+            </section>
+
+            <!-- Metrics -->
+            <section class="metrics card">
+                <h2>Detection Analytics</h2>
+                <div class="chart-container">
+                    <canvas id="detChart"></canvas>
+                </div>
+            </section>
+
+            <!-- Recent Alerts -->
+            <section class="alerts card">
+                <h2>Recent Alerts</h2>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Time</th>
+                                <th>Camera</th>
+                                <th>Type</th>
+                                <th>Severity</th>
+                                <th>Message</th>
+                            </tr>
+                        </thead>
+                        <tbody id="alerts-table-body">
+                            <!-- Dynamic Alert Rows -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

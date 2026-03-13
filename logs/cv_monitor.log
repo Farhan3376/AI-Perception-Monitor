@@ -1,0 +1,148 @@
+{"time": "2026-03-13T14:18:12.708387Z", "level": "INFO", "name": "SystemHost", "message": "====================================================="}
+{"time": "2026-03-13T14:18:12.708387Z", "level": "INFO", "name": "SystemHost", "message": "  CV Monitor Pro \u2014 Starting Up"}
+{"time": "2026-03-13T14:18:12.708387Z", "level": "INFO", "name": "SystemHost", "message": "====================================================="}
+{"time": "2026-03-13T14:18:12.708387Z", "level": "INFO", "name": "camera.stream", "message": "[Stream:cam0] Started \u2014 0"}
+{"time": "2026-03-13T14:18:12.708387Z", "level": "INFO", "name": "camera.manager", "message": "[CameraManager] Registered camera 'Front Door'"}
+{"time": "2026-03-13T14:18:12.720982Z", "level": "INFO", "name": "storage.cleanup", "message": "[Cleanup] Storage auto-cleanup started (Max Age: 30 days)."}
+{"time": "2026-03-13T14:18:12.723009Z", "level": "ERROR", "name": "storage.cleanup", "message": "[Cleanup] DB purge failed: 'NoneType' object has no attribute 'events'"}
+{"time": "2026-03-13T14:18:12.724054Z", "level": "INFO", "name": "detection.pipeline", "message": "[Pipeline:cam0] Started."}
+{"time": "2026-03-13T14:18:12.726756Z", "level": "INFO", "name": "SystemHost", "message": "[SystemHost] Background layers initialized. Starting FastAPI..."}
+{"time": "2026-03-13T14:18:12.936276Z", "level": "INFO", "name": "api.main", "message": "[API] Starting up..."}
+{"time": "2026-03-13T14:18:12.936276Z", "level": "INFO", "name": "database.connection", "message": "[DB] Connecting to MongoDB: mongodb://localhost:27017"}
+{"time": "2026-03-13T14:18:15.196465Z", "level": "INFO", "name": "camera.stream", "message": "[Stream:cam0] Connected"}
+{"time": "2026-03-13T14:18:19.116609Z", "level": "ERROR", "name": "database.connection", "message": "[DB] Failed to connect to MongoDB: localhost:27017: [WinError 10061] No connection could be made because the target machine actively refused it (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 5.0s, Topology Description: <TopologyDescription id: 69b41ca488fc432d9f248794, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [WinError 10061] No connection could be made because the target machine actively refused it (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>"}
+{"time": "2026-03-13T16:16:09.083624Z", "level": "INFO", "name": "SystemHost", "message": "====================================================="}
+{"time": "2026-03-13T16:16:09.085618Z", "level": "INFO", "name": "SystemHost", "message": "  CV Monitor Pro \u2014 Starting Up"}
+{"time": "2026-03-13T16:16:09.087004Z", "level": "INFO", "name": "SystemHost", "message": "====================================================="}
+{"time": "2026-03-13T16:16:09.090998Z", "level": "INFO", "name": "camera.stream", "message": "[Stream:cam0] Started \u2014 0"}
+{"time": "2026-03-13T16:16:09.091997Z", "level": "INFO", "name": "camera.manager", "message": "[CameraManager] Registered camera 'Front Door'"}
+{"time": "2026-03-13T16:16:09.094989Z", "level": "INFO", "name": "storage.cleanup", "message": "[Cleanup] Storage auto-cleanup started (Max Age: 30 days)."}
+{"time": "2026-03-13T16:16:09.100693Z", "level": "INFO", "name": "detection.pipeline", "message": "[Pipeline:cam0] Started."}
+{"time": "2026-03-13T16:16:09.102688Z", "level": "INFO", "name": "SystemHost", "message": "[SystemHost] Background layers initialized. Starting FastAPI..."}
+{"time": "2026-03-13T16:16:09.300994Z", "level": "INFO", "name": "api.main", "message": "[API] Starting up..."}
+{"time": "2026-03-13T16:16:09.302990Z", "level": "INFO", "name": "database.connection", "message": "[DB] Connecting to MongoDB: mongodb://127.0.0.1:27017"}
+{"time": "2026-03-13T16:16:10.655913Z", "level": "INFO", "name": "database.connection", "message": "[DB] Connected to database 'cv_monitor'"}
+{"time": "2026-03-13T16:16:11.772524Z", "level": "INFO", "name": "camera.stream", "message": "[Stream:cam0] Connected"}
+{"time": "2026-03-13T16:16:25.570986Z", "level": "INFO", "name": "detection.detector", "message": "[Detector] Loading YOLO model 'yolov8n.pt' on CPU"}
+{"time": "2026-03-13T16:16:34.991754Z", "level": "INFO", "name": "deep_sort_realtime.embedder.embedder_pytorch", "message": "MobileNetV2 Embedder for Deep Sort initialised"}
+{"time": "2026-03-13T16:16:34.994417Z", "level": "INFO", "name": "deep_sort_realtime.embedder.embedder_pytorch", "message": "- gpu enabled: False"}
+{"time": "2026-03-13T16:16:34.996267Z", "level": "INFO", "name": "deep_sort_realtime.embedder.embedder_pytorch", "message": "- half precision: False"}
+{"time": "2026-03-13T16:16:35.002388Z", "level": "INFO", "name": "deep_sort_realtime.embedder.embedder_pytorch", "message": "- max batch size: 16"}
+{"time": "2026-03-13T16:16:35.013872Z", "level": "INFO", "name": "deep_sort_realtime.embedder.embedder_pytorch", "message": "- expects BGR: True"}
+{"time": "2026-03-13T16:16:35.378713Z", "level": "INFO", "name": "deep_sort_realtime.deepsort_tracker", "message": "DeepSort Tracker initialised"}
+{"time": "2026-03-13T16:16:35.379711Z", "level": "INFO", "name": "deep_sort_realtime.deepsort_tracker", "message": "- max age: 30"}
+{"time": "2026-03-13T16:16:35.381704Z", "level": "INFO", "name": "deep_sort_realtime.deepsort_tracker", "message": "- appearance threshold: 0.2"}
+{"time": "2026-03-13T16:16:35.383699Z", "level": "INFO", "name": "deep_sort_realtime.deepsort_tracker", "message": "- nms threshold: OFF"}
+{"time": "2026-03-13T16:16:35.385632Z", "level": "INFO", "name": "deep_sort_realtime.deepsort_tracker", "message": "- max num of appearance features: 100"}
+{"time": "2026-03-13T16:16:35.386722Z", "level": "INFO", "name": "deep_sort_realtime.deepsort_tracker", "message": "- overriding track class : No"}
+{"time": "2026-03-13T16:16:35.388234Z", "level": "INFO", "name": "deep_sort_realtime.deepsort_tracker", "message": "- today given : No"}
+{"time": "2026-03-13T16:16:35.389232Z", "level": "INFO", "name": "deep_sort_realtime.deepsort_tracker", "message": "- in-build embedder : Yes"}
+{"time": "2026-03-13T16:16:35.391228Z", "level": "INFO", "name": "deep_sort_realtime.deepsort_tracker", "message": "- polygon detections : No"}
+{"time": "2026-03-13T16:16:37.190437Z", "level": "ERROR", "name": "alerts.handler", "message": "[AlertHandler] No running event loop to process alert."}
+{"time": "2026-03-13T16:16:47.421779Z", "level": "WARNING", "name": "analysis.loitering", "message": "[Loitering] Person #1 loitering for 10.3s"}
+{"time": "2026-03-13T16:16:47.427275Z", "level": "ERROR", "name": "alerts.handler", "message": "[AlertHandler] No running event loop to process alert."}
+{"time": "2026-03-13T16:16:48.705901Z", "level": "INFO", "name": "api.routes.ws", "message": "[WebSocket] Client connected to camera 'cam0'"}
+{"time": "2026-03-13T16:16:52.839148Z", "level": "ERROR", "name": "alerts.handler", "message": "[AlertHandler] No running event loop to process alert."}
+{"time": "2026-03-13T16:17:03.107159Z", "level": "WARNING", "name": "analysis.loitering", "message": "[Loitering] Person #1 loitering for 10.3s"}
+{"time": "2026-03-13T16:17:07.274538Z", "level": "ERROR", "name": "alerts.handler", "message": "[AlertHandler] No running event loop to process alert."}
+{"time": "2026-03-13T16:17:23.207390Z", "level": "ERROR", "name": "alerts.handler", "message": "[AlertHandler] No running event loop to process alert."}
+{"time": "2026-03-13T16:17:28.144016Z", "level": "INFO", "name": "api.routes.ws", "message": "[WebSocket] Client disconnected from camera 'cam0'"}
+{"time": "2026-03-13T16:17:33.433137Z", "level": "INFO", "name": "api.main", "message": "[API] Shutting down..."}
+{"time": "2026-03-13T16:17:33.437404Z", "level": "INFO", "name": "database.connection", "message": "[DB] Disconnected."}
+{"time": "2026-03-13T16:17:33.442183Z", "level": "INFO", "name": "SystemHost", "message": "[SystemHost] Shutting down..."}
+{"time": "2026-03-13T16:17:33.687643Z", "level": "INFO", "name": "detection.pipeline", "message": "[Pipeline:cam0] Stopped."}
+{"time": "2026-03-13T16:17:33.846056Z", "level": "INFO", "name": "camera.stream", "message": "[Stream:cam0] Stopped."}
+{"time": "2026-03-13T16:17:33.848046Z", "level": "INFO", "name": "camera.manager", "message": "[CameraManager] All streams stopped."}
+{"time": "2026-03-13T16:20:21.270524Z", "level": "INFO", "name": "SystemHost", "message": "====================================================="}
+{"time": "2026-03-13T16:20:21.271517Z", "level": "INFO", "name": "SystemHost", "message": "  CV Monitor Pro \u2014 Starting Up"}
+{"time": "2026-03-13T16:20:21.271517Z", "level": "INFO", "name": "SystemHost", "message": "====================================================="}
+{"time": "2026-03-13T16:20:21.275506Z", "level": "INFO", "name": "camera.stream", "message": "[Stream:cam0] Started \u2014 0"}
+{"time": "2026-03-13T16:20:21.275506Z", "level": "INFO", "name": "camera.manager", "message": "[CameraManager] Registered camera 'Front Door'"}
+{"time": "2026-03-13T16:20:21.278499Z", "level": "INFO", "name": "storage.cleanup", "message": "[Cleanup] Storage auto-cleanup started (Max Age: 30 days)."}
+{"time": "2026-03-13T16:20:21.283485Z", "level": "INFO", "name": "detection.pipeline", "message": "[Pipeline:cam0] Started."}
+{"time": "2026-03-13T16:20:21.285479Z", "level": "INFO", "name": "SystemHost", "message": "[SystemHost] Background layers initialized. Starting FastAPI..."}
+{"time": "2026-03-13T16:20:21.402277Z", "level": "INFO", "name": "api.main", "message": "[API] Starting up..."}
+{"time": "2026-03-13T16:20:21.403275Z", "level": "INFO", "name": "database.connection", "message": "[DB] Connecting to MongoDB: mongodb://127.0.0.1:27017"}
+{"time": "2026-03-13T16:20:22.018119Z", "level": "INFO", "name": "database.connection", "message": "[DB] Connected to database 'cv_monitor'"}
+{"time": "2026-03-13T16:20:22.827441Z", "level": "INFO", "name": "camera.stream", "message": "[Stream:cam0] Connected"}
+{"time": "2026-03-13T16:20:26.656797Z", "level": "INFO", "name": "api.routes.ws", "message": "[WebSocket] Client connected to camera 'cam0'"}
+{"time": "2026-03-13T16:20:33.515072Z", "level": "INFO", "name": "detection.detector", "message": "[Detector] Loading YOLO model 'yolov8n.pt' on CPU"}
+{"time": "2026-03-13T16:20:35.532239Z", "level": "INFO", "name": "deep_sort_realtime.embedder.embedder_pytorch", "message": "MobileNetV2 Embedder for Deep Sort initialised"}
+{"time": "2026-03-13T16:20:35.534235Z", "level": "INFO", "name": "deep_sort_realtime.embedder.embedder_pytorch", "message": "- gpu enabled: False"}
+{"time": "2026-03-13T16:20:35.540218Z", "level": "INFO", "name": "deep_sort_realtime.embedder.embedder_pytorch", "message": "- half precision: False"}
+{"time": "2026-03-13T16:20:35.542213Z", "level": "INFO", "name": "deep_sort_realtime.embedder.embedder_pytorch", "message": "- max batch size: 16"}
+{"time": "2026-03-13T16:20:35.544209Z", "level": "INFO", "name": "deep_sort_realtime.embedder.embedder_pytorch", "message": "- expects BGR: True"}
+{"time": "2026-03-13T16:20:35.770607Z", "level": "INFO", "name": "deep_sort_realtime.deepsort_tracker", "message": "DeepSort Tracker initialised"}
+{"time": "2026-03-13T16:20:35.772605Z", "level": "INFO", "name": "deep_sort_realtime.deepsort_tracker", "message": "- max age: 30"}
+{"time": "2026-03-13T16:20:35.773598Z", "level": "INFO", "name": "deep_sort_realtime.deepsort_tracker", "message": "- appearance threshold: 0.2"}
+{"time": "2026-03-13T16:20:35.774597Z", "level": "INFO", "name": "deep_sort_realtime.deepsort_tracker", "message": "- nms threshold: OFF"}
+{"time": "2026-03-13T16:20:35.775594Z", "level": "INFO", "name": "deep_sort_realtime.deepsort_tracker", "message": "- max num of appearance features: 100"}
+{"time": "2026-03-13T16:20:35.776590Z", "level": "INFO", "name": "deep_sort_realtime.deepsort_tracker", "message": "- overriding track class : No"}
+{"time": "2026-03-13T16:20:35.777588Z", "level": "INFO", "name": "deep_sort_realtime.deepsort_tracker", "message": "- today given : No"}
+{"time": "2026-03-13T16:20:35.778589Z", "level": "INFO", "name": "deep_sort_realtime.deepsort_tracker", "message": "- in-build embedder : Yes"}
+{"time": "2026-03-13T16:20:35.780580Z", "level": "INFO", "name": "deep_sort_realtime.deepsort_tracker", "message": "- polygon detections : No"}
+{"time": "2026-03-13T16:20:37.277533Z", "level": "ERROR", "name": "alerts.handler", "message": "[AlertHandler] No running event loop to process alert."}
+{"time": "2026-03-13T16:20:37.282055Z", "level": "ERROR", "name": "alerts.handler", "message": "[AlertHandler] No running event loop to process alert."}
+{"time": "2026-03-13T16:20:47.336400Z", "level": "WARNING", "name": "analysis.loitering", "message": "[Loitering] Person #1 loitering for 10.1s"}
+{"time": "2026-03-13T16:20:47.405728Z", "level": "ERROR", "name": "alerts.handler", "message": "[AlertHandler] No running event loop to process alert."}
+{"time": "2026-03-13T16:21:07.443151Z", "level": "ERROR", "name": "alerts.handler", "message": "[AlertHandler] No running event loop to process alert."}
+{"time": "2026-03-13T16:21:07.450114Z", "level": "ERROR", "name": "alerts.handler", "message": "[AlertHandler] No running event loop to process alert."}
+{"time": "2026-03-13T16:21:37.492816Z", "level": "ERROR", "name": "alerts.handler", "message": "[AlertHandler] No running event loop to process alert."}
+{"time": "2026-03-13T16:21:37.504784Z", "level": "ERROR", "name": "alerts.handler", "message": "[AlertHandler] No running event loop to process alert."}
+{"time": "2026-03-13T16:21:45.154398Z", "level": "INFO", "name": "api.routes.ws", "message": "[WebSocket] Client disconnected from camera 'cam0'"}
+{"time": "2026-03-13T16:21:45.257527Z", "level": "INFO", "name": "api.main", "message": "[API] Shutting down..."}
+{"time": "2026-03-13T16:21:45.259521Z", "level": "INFO", "name": "database.connection", "message": "[DB] Disconnected."}
+{"time": "2026-03-13T16:21:45.262513Z", "level": "INFO", "name": "SystemHost", "message": "[SystemHost] Shutting down..."}
+{"time": "2026-03-13T16:21:45.385685Z", "level": "INFO", "name": "detection.pipeline", "message": "[Pipeline:cam0] Stopped."}
+{"time": "2026-03-13T16:21:45.490754Z", "level": "INFO", "name": "camera.stream", "message": "[Stream:cam0] Stopped."}
+{"time": "2026-03-13T16:21:45.490754Z", "level": "INFO", "name": "camera.manager", "message": "[CameraManager] All streams stopped."}
+{"time": "2026-03-13T16:22:41.607882Z", "level": "INFO", "name": "SystemHost", "message": "====================================================="}
+{"time": "2026-03-13T16:22:41.608878Z", "level": "INFO", "name": "SystemHost", "message": "  CV Monitor Pro \u2014 Starting Up"}
+{"time": "2026-03-13T16:22:41.610873Z", "level": "INFO", "name": "SystemHost", "message": "====================================================="}
+{"time": "2026-03-13T16:22:41.612868Z", "level": "INFO", "name": "camera.stream", "message": "[Stream:cam0] Started \u2014 0"}
+{"time": "2026-03-13T16:22:41.613866Z", "level": "INFO", "name": "camera.manager", "message": "[CameraManager] Registered camera 'Front Door'"}
+{"time": "2026-03-13T16:22:41.616858Z", "level": "INFO", "name": "storage.cleanup", "message": "[Cleanup] Storage auto-cleanup started (Max Age: 30 days)."}
+{"time": "2026-03-13T16:22:41.626831Z", "level": "INFO", "name": "detection.pipeline", "message": "[Pipeline:cam0] Started."}
+{"time": "2026-03-13T16:22:41.629822Z", "level": "INFO", "name": "SystemHost", "message": "[SystemHost] Background layers initialized. Starting FastAPI..."}
+{"time": "2026-03-13T16:22:41.810431Z", "level": "INFO", "name": "api.main", "message": "[API] Starting up..."}
+{"time": "2026-03-13T16:22:41.811429Z", "level": "INFO", "name": "database.connection", "message": "[DB] Connecting to MongoDB: mongodb://127.0.0.1:27017"}
+{"time": "2026-03-13T16:22:42.480908Z", "level": "INFO", "name": "database.connection", "message": "[DB] Connected to database 'cv_monitor'"}
+{"time": "2026-03-13T16:22:43.389168Z", "level": "INFO", "name": "camera.stream", "message": "[Stream:cam0] Connected"}
+{"time": "2026-03-13T16:22:51.902543Z", "level": "INFO", "name": "detection.detector", "message": "[Detector] Loading YOLO model 'yolov8n.pt' on CPU"}
+{"time": "2026-03-13T16:22:53.651999Z", "level": "INFO", "name": "deep_sort_realtime.embedder.embedder_pytorch", "message": "MobileNetV2 Embedder for Deep Sort initialised"}
+{"time": "2026-03-13T16:22:53.651999Z", "level": "INFO", "name": "deep_sort_realtime.embedder.embedder_pytorch", "message": "- gpu enabled: False"}
+{"time": "2026-03-13T16:22:53.653995Z", "level": "INFO", "name": "deep_sort_realtime.embedder.embedder_pytorch", "message": "- half precision: False"}
+{"time": "2026-03-13T16:22:53.654993Z", "level": "INFO", "name": "deep_sort_realtime.embedder.embedder_pytorch", "message": "- max batch size: 16"}
+{"time": "2026-03-13T16:22:53.655989Z", "level": "INFO", "name": "deep_sort_realtime.embedder.embedder_pytorch", "message": "- expects BGR: True"}
+{"time": "2026-03-13T16:22:53.836799Z", "level": "INFO", "name": "deep_sort_realtime.deepsort_tracker", "message": "DeepSort Tracker initialised"}
+{"time": "2026-03-13T16:22:53.837802Z", "level": "INFO", "name": "deep_sort_realtime.deepsort_tracker", "message": "- max age: 30"}
+{"time": "2026-03-13T16:22:53.838799Z", "level": "INFO", "name": "deep_sort_realtime.deepsort_tracker", "message": "- appearance threshold: 0.2"}
+{"time": "2026-03-13T16:22:53.840794Z", "level": "INFO", "name": "deep_sort_realtime.deepsort_tracker", "message": "- nms threshold: OFF"}
+{"time": "2026-03-13T16:22:53.841792Z", "level": "INFO", "name": "deep_sort_realtime.deepsort_tracker", "message": "- max num of appearance features: 100"}
+{"time": "2026-03-13T16:22:53.842790Z", "level": "INFO", "name": "deep_sort_realtime.deepsort_tracker", "message": "- overriding track class : No"}
+{"time": "2026-03-13T16:22:53.843786Z", "level": "INFO", "name": "deep_sort_realtime.deepsort_tracker", "message": "- today given : No"}
+{"time": "2026-03-13T16:22:53.844784Z", "level": "INFO", "name": "deep_sort_realtime.deepsort_tracker", "message": "- in-build embedder : Yes"}
+{"time": "2026-03-13T16:22:53.845781Z", "level": "INFO", "name": "deep_sort_realtime.deepsort_tracker", "message": "- polygon detections : No"}
+{"time": "2026-03-13T16:22:54.953582Z", "level": "INFO", "name": "alerts.handler", "message": "[AlertHandler] Logged 'roi_violation' to DB (id: 69b439de287321ba5610f475)"}
+{"time": "2026-03-13T16:22:54.955566Z", "level": "INFO", "name": "alerts.handler", "message": "[AlertHandler] Logged 'person_detected' to DB (id: 69b439de287321ba5610f476)"}
+{"time": "2026-03-13T16:23:05.050993Z", "level": "WARNING", "name": "analysis.loitering", "message": "[Loitering] Person #1 loitering for 10.1s"}
+{"time": "2026-03-13T16:23:05.059968Z", "level": "INFO", "name": "alerts.handler", "message": "[AlertHandler] Logged 'loitering' to DB (id: 69b439e9287321ba5610f47c)"}
+{"time": "2026-03-13T16:23:05.722324Z", "level": "INFO", "name": "api.routes.ws", "message": "[WebSocket] Client connected to camera 'cam0'"}
+{"time": "2026-03-13T16:23:25.217240Z", "level": "INFO", "name": "alerts.handler", "message": "[AlertHandler] Logged 'roi_violation' to DB (id: 69b439fd287321ba5610f486)"}
+{"time": "2026-03-13T16:23:25.222760Z", "level": "INFO", "name": "alerts.handler", "message": "[AlertHandler] Logged 'person_detected' to DB (id: 69b439fd287321ba5610f487)"}
+{"time": "2026-03-13T16:23:55.428449Z", "level": "INFO", "name": "alerts.handler", "message": "[AlertHandler] Logged 'roi_violation' to DB (id: 69b43a1b287321ba5610f496)"}
+{"time": "2026-03-13T16:23:55.430565Z", "level": "INFO", "name": "alerts.handler", "message": "[AlertHandler] Logged 'person_detected' to DB (id: 69b43a1b287321ba5610f497)"}
+{"time": "2026-03-13T16:24:11.620483Z", "level": "WARNING", "name": "analysis.loitering", "message": "[Loitering] Person #1 loitering for 10.0s"}
+{"time": "2026-03-13T16:24:11.628461Z", "level": "INFO", "name": "alerts.handler", "message": "[AlertHandler] Logged 'loitering' to DB (id: 69b43a2b287321ba5610f49e)"}
+{"time": "2026-03-13T16:24:25.719219Z", "level": "INFO", "name": "alerts.handler", "message": "[AlertHandler] Logged 'roi_violation' to DB (id: 69b43a39287321ba5610f4a4)"}
+{"time": "2026-03-13T16:24:25.725203Z", "level": "INFO", "name": "alerts.handler", "message": "[AlertHandler] Logged 'person_detected' to DB (id: 69b43a39287321ba5610f4a5)"}
+{"time": "2026-03-13T16:24:35.924513Z", "level": "WARNING", "name": "analysis.loitering", "message": "[Loitering] Person #1 loitering for 10.2s"}
+{"time": "2026-03-13T16:24:55.803649Z", "level": "INFO", "name": "alerts.handler", "message": "[AlertHandler] Logged 'roi_violation' to DB (id: 69b43a57287321ba5610f4b4)"}
+{"time": "2026-03-13T16:24:55.807641Z", "level": "INFO", "name": "alerts.handler", "message": "[AlertHandler] Logged 'person_detected' to DB (id: 69b43a57287321ba5610f4b5)"}
+{"time": "2026-03-13T16:25:23.526848Z", "level": "INFO", "name": "api.routes.ws", "message": "[WebSocket] Client disconnected from camera 'cam0'"}
+{"time": "2026-03-13T16:25:26.119804Z", "level": "INFO", "name": "alerts.handler", "message": "[AlertHandler] Logged 'roi_violation' to DB (id: 69b43a76287321ba5610f4c3)"}
+{"time": "2026-03-13T16:25:26.124556Z", "level": "INFO", "name": "alerts.handler", "message": "[AlertHandler] Logged 'person_detected' to DB (id: 69b43a76287321ba5610f4c4)"}
+{"time": "2026-03-13T16:25:32.771706Z", "level": "INFO", "name": "SystemHost", "message": "[SystemHost] Shutting down..."}
+{"time": "2026-03-13T16:25:32.928473Z", "level": "INFO", "name": "detection.pipeline", "message": "[Pipeline:cam0] Stopped."}
+{"time": "2026-03-13T16:25:33.087377Z", "level": "INFO", "name": "camera.stream", "message": "[Stream:cam0] Stopped."}
+{"time": "2026-03-13T16:25:33.088373Z", "level": "INFO", "name": "camera.manager", "message": "[CameraManager] All streams stopped."}

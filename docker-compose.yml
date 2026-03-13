@@ -1,0 +1,40 @@
+version: '3.8'
+
+services:
+  cv-monitor:
+    build: .
+    container_name: cv-monitor-api
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+      # Map a local videos/ directory if you want to stream from file
+      - ./videos:/app/videos:ro
+    environment:
+      - MONGO_URI=mongodb://mongodb:27017
+      - MONGO_DB=cv_monitor
+      # - DEVICE=cuda:0  # Uncomment if using nvidia-docker
+    depends_on:
+      - mongodb
+    # Uncomment the below block to enable GPU passthrough
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           count: 1
+    #           capabilities: [gpu]
+
+  mongodb:
+    image: mongo:6.0
+    container_name: cv-monitor-db
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+
+volumes:
+  mongo-data:
